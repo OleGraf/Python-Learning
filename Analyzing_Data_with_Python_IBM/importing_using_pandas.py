@@ -4,7 +4,7 @@ import pandas as pd
 
 pp = pprint.PrettyPrinter(indent=4)
 
-path = "Analyzing_Data_with_Python_IBM/automobile.csv"
+# path = "Analyzing_Data_with_Python_IBM/automobile.csv"
 
 url = "https://archive.ics.uci.edu/ml/machine-learning-databases/autos/imports-85.data"
 headers = ["symboling", "normalized-losses", "make", "fuel-type", "aspiration", "num-of-doors",
@@ -15,6 +15,8 @@ headers = ["symboling", "normalized-losses", "make", "fuel-type", "aspiration", 
 df = pd.read_csv(url, header=None)
 df.columns = headers
 
-pp.pprint(df.head(5))  # tail
+# pp.pprint(df.)
+# dtypes, describe(include="all", info() shows top and bootm 30 rows of dtypes)
 
-df.to_csv(path)
+# pp.pprint(df.head(5))  # tail
+# df.to_csv(path)
