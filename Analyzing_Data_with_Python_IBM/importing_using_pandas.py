@@ -14,9 +14,9 @@ headers = ["symboling", "normalized-losses", "make", "fuel-type", "aspiration", 
 
 df = pd.read_csv(url, header=None)
 df.columns = headers
-
-# pp.pprint(df.)
-# dtypes, describe(include="all", info() shows top and bootm 30 rows of dtypes)
-
-# pp.pprint(df.head(5))  # tail
-# df.to_csv(path)
+if __name__ == "__main__":
+    print("---------------------\n" + __name__ + "\n---------------------\n")
+    pp.pprint(df.dtypes)
+    # dtypes, describe(include="all", info() shows top and bootm 30 rows of dtypes)
+    # pp.pprint(df.head(5))  # tail
+    # df.to_csv(path)
