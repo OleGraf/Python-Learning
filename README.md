@@ -35,5 +35,6 @@ Linter
 
 pip install pandas
 pip install seaborn
-------------
+
 following edX courses and learning
+------------
