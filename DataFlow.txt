@@ -1,0 +1,15 @@
+1. Import data
+
+2. Pre-Processing
+    - missing values (?, N/A, 0, blank)
+        refilling from source
+        drop missing values (variable, entry)
+        replacing (avg, mean, frequency most common, on other functions ...)
+        leave it as is
+    - Formatierung
+    - Normalisierung
+    - Binning
+    Kategrien in Nummern
+
+3. Data Formatting
+    
