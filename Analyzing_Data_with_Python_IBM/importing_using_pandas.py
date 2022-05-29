@@ -94,3 +94,17 @@ if __name__ == "__main__":
     # print(df.dtypes)
     # dtypes, describe(include="all", info() shows top and bootm 30 rows of dtypes)
     # df.to_csv("Analyzing_Data_with_Python_IBM/automobile.csv")
+
+    lm = LinearRegression()
+    X = df[['highway-mpg']]
+    Y = df['price']
+
+    lm.fit(X, Y)
+    Yhat = lm.predict(X)
+    print("Price = " + str(lm.intercept_) +
+          " + " + str(lm.coef_) + " * highway-mpg")
+
+    # dfShort = df[['horsepower', 'curb-weight', 'engine-size', 'highway-mpg']]
+    # lm.fit(dfShort, df['price'])
+    # Yhat = lm.predict(X)
+    # print(Yhat)
