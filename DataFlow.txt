@@ -12,4 +12,5 @@
     Kategrien in Nummern
 
 3. Data Formatting
-    
+    MPG to L/100km usw.
+    replacing "two" with 2, ...
