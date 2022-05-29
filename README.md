@@ -9,7 +9,8 @@ vsCode https://code.visualstudio.com/<br>
         Python Microsoft extension
         Rainbow CSV
 
-Linter<br>
+Linter
+------------
 pip install flak8<br>
 
 Settings File:
@@ -37,6 +38,8 @@ Settings File:
  
      // More settings goes here...
 
+Other Pakages
+------------
 pip install pandas<br>
 pip install seaborn<br>
 
