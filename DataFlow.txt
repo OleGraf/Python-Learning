@@ -34,4 +34,5 @@
         sns.regplot(x='engine-size', y='price', data=df)
         plt.ylim(0,)
     - Correlation - Statistics
-        P-Value Pearson Correlation
+        P-Value Pearson Correlation ?
+        Chi-Square

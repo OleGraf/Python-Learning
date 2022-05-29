@@ -1,9 +1,10 @@
 import pprint
 
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
-import seaborn as sns
+
+# import seaborn as sns
 
 MPG_TO_LKM = 235
 
@@ -85,9 +86,9 @@ if __name__ == "__main__":
     # plt.colorbar()
     # plt.show()
 
-    sns.regplot(x='highway-mpg', y='price', data=df)
-    plt.ylim(0,)
-    plt.show()
+    # sns.regplot(x='highway-mpg', y='price', data=df)
+    # plt.ylim(0,)
+    # plt.show()
 
     # print(df.dtypes)
     # dtypes, describe(include="all", info() shows top and bootm 30 rows of dtypes)
