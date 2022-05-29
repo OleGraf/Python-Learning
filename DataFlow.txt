@@ -36,3 +36,15 @@
     - Correlation - Statistics
         P-Value Pearson Correlation ?
         Chi-Square
+
+4. Model Development
+
+Model : A model or estimator can be thought of as a mathematical equation
+used to predict the value given one or more other values. Relating one or
+more independent variables or features to dependent variables.
+    - Simple und Multiple Linear Regreession
+        SLR relationship between two variables
+    - Module Evaluation using Visualization
+    - Polynomial Regression and Pipelines
+    - R-squared and MSE for In-Sample Evaluation
+    - Prediction and Decision Making

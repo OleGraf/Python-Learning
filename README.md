@@ -42,6 +42,7 @@ Other Pakages
 ------------
 pip install pandas<br>
 pip install seaborn<br>
+pip install scikit-learn<br>
 
 Following edX courses and learning
 ------------
