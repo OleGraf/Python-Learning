@@ -2,14 +2,17 @@
 
 Setup and needed installs:
 ------------
-Python 3.9.13 https://www.python.org/downloads/release/python-3913/
-vsCode https://code.visualstudio.com/
-    Extensions
-    Python Microsoft extension
-    Rainbow CSV
+Python 3.9.13 https://www.python.org/downloads/release/python-3913/<br>
+vsCode https://code.visualstudio.com/<br>
+    Extensions<br>
+        Python Microsoft extension<br>
+        Rainbow CSV<br>
 
-Linter
-    pip install flak8
+Linter<br>
+    pip install flak8<br>
+
+    settings File:
+    '
     preferences - settings - file view
     "editor.fontSize": 16,
      // Whether to lint Python files
@@ -32,9 +35,10 @@ Linter
     "workbench.colorTheme": "Default Dark+",
  
      // More settings goes here...
+     '
 
-pip install pandas
-pip install seaborn
+pip install pandas<br>
+pip install seaborn<br>
 
-following edX courses and learning
+Following edX courses and learning
 ------------
