@@ -17,3 +17,21 @@
     - Kategorien in Nummern
         gas, diesel, ... in Nummern pd.get_dummies
         replacing "two" with 2, ...
+
+3. Data Analysis
+    - Desciptive Statistics
+        describe()
+        df["drive-wheels"].value_counts().to_frame()
+        BoxPlots:
+            import seaborn as sns
+            import matplotlib.pyplot as plt
+            print(sns.boxenplot(x="drive-wheels", y="price", data=df))
+            plt.show()
+    - GroupBy
+        .groupby()
+        .pivot
+    - Correlation
+        sns.regplot(x='engine-size', y='price', data=df)
+        plt.ylim(0,)
+    - Correlation - Statistics
+        P-Value Pearson Correlation

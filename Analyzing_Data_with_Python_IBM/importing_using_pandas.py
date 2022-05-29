@@ -1,7 +1,9 @@
 import pprint
 
+import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
+import seaborn as sns
 
 MPG_TO_LKM = 235
 
@@ -18,7 +20,8 @@ headers = ["symboling", "normalized-losses", "make", "fuel-type", "aspiration", 
 df = pd.read_csv(path, header=None)
 df.columns = headers
 if __name__ == "__main__":
-    print("---------------------\n" + __name__ + "\n---------------------\n")
+    print("\n---------------------------------\n" +
+          __name__ + "\n---------------------------------\n")
 
     # print(df.head(20))
 
@@ -59,9 +62,33 @@ if __name__ == "__main__":
     # kategorien in Nummern
     df_tmp = pd.get_dummies(df["fuel-type"])
     df = pd.concat([df, df_tmp], axis=1)
-    print(df)
 
-    # pp.pprint(df.dtypes)
+    # print(df)
+
+    # sns.boxplot(x="drive-wheels", y="price", data=df)
+    # plt.show()
+    # plt.clf()
+    # plt.scatter(x="engine-size", y="price", data=df)
+    # plt.title("Engine Size vs Price")
+    # plt.xlabel("Engien Size")
+    # plt.ylabel("Price")
+    # plt.show()
+    # plt.clf()
+
+    # df_test = df[["drive-wheels", "body-style", "price"]]
+    # df_grp = df_test.groupby(
+    #     ['drive-wheels', 'body-style'], as_index=False).mean()
+    # df_pivot = df_grp.pivot(index='drive-wheels', columns='body-style')
+    # print(df_pivot)
+
+    # plt.pcolor(df_pivot, cmap='RdBu')
+    # plt.colorbar()
+    # plt.show()
+
+    sns.regplot(x='highway-mpg', y='price', data=df)
+    plt.ylim(0,)
+    plt.show()
+
+    # print(df.dtypes)
     # dtypes, describe(include="all", info() shows top and bootm 30 rows of dtypes)
-    # pp.pprint(df.head(5))  # tail
     # df.to_csv("Analyzing_Data_with_Python_IBM/automobile.csv")
