@@ -7,10 +7,13 @@
         replacing (avg, mean, frequency most common, on other functions ...)
         leave it as is
     - Formatierung
+        MPG to L/100km usw.
     - Normalisierung
+        Simple Feature scaling
+        Min-Max
+        Z-Score
     - Binning
-    Kategrien in Nummern
-
-3. Data Formatting
-    MPG to L/100km usw.
-    replacing "two" with 2, ...
+        Group in Bins Age 0-5, 6-10, ...
+    - Kategorien in Nummern
+        gas, diesel, ... in Nummern pd.get_dummies
+        replacing "two" with 2, ...

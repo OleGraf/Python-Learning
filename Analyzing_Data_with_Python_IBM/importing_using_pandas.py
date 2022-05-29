@@ -41,9 +41,27 @@ if __name__ == "__main__":
     df["city-mpg"] = MPG_TO_LKM / df["city-mpg"]
     df.rename(columns={"city-mpg": "city-L/100km"}, inplace=True)
 
-    # print(df.head(20))
+    max_length = df["length"].max
+    min_length = df["length"].min
+    # Simple Feature scaling
+    # df["length"] = df["length"] / max_length
+    # min-Max Scaling
+    # df["length"] = (df["length"]-min_length) / (max_length-min_length)
+    # Z-Score
+    # df["length"] = (df["length"]-df["length"].mean()) / df["length"].std()
+
+    # binning Price range: 5188 - 45400
+    bins = np.linspace(min(df["price"]), max(df["price"]), 4)
+    group_names = ["Low", "Medium", "High"]
+    df["price-binned"] = pd.cut(df["price"], bins,
+                                labels=group_names, include_lowest=True)
+
+    # kategorien in Nummern
+    df_tmp = pd.get_dummies(df["fuel-type"])
+    df = pd.concat([df, df_tmp], axis=1)
+    print(df)
 
     # pp.pprint(df.dtypes)
     # dtypes, describe(include="all", info() shows top and bootm 30 rows of dtypes)
     # pp.pprint(df.head(5))  # tail
-    # df.to_csv(path)
+    # df.to_csv("Analyzing_Data_with_Python_IBM/automobile.csv")
